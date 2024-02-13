@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDDLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AUDDLE</h1>
+        <div id="imageContainer">
+            <!-- Image will be displayed here -->
+        </div>
+        <div id="inputContainer">
+            <input type="range" id="timelineSlider" min="0" max="48" value="24" step="1" onInput="updateSliderValue()">
+            <p id="sliderValue"></p>
+            <button id="checkButton" onclick="checkGuess()">Check</button>
+            <button onclick="nextPhoto()">Next</button>
+            <p id="result"></p>
+            <p id="correctGuesses">Correct Guesses: 0</p>
+            <div id="attempts">
+                <!-- Attempt circles will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
